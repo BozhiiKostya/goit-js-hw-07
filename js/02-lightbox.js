@@ -19,12 +19,7 @@ const mapGalleItem = galleryItems
 
 galleryEl.innerHTML = mapGalleItem;
 
-galleryEl.addEventListener("click", onClickAllGallery);
-
-function onClickAllGallery(e) {
-  e.preventDefault();
-  let gallery = new SimpleLightbox(".gallery__link", {
-    captionsData: "alt",
-    captionDelay: "250",
-  });
-}
+new SimpleLightbox(".gallery__link", {
+  captionsData: "alt",
+  captionDelay: "250",
+});
